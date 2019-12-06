@@ -95,7 +95,6 @@ class InstallerMirrorApplication extends MirrorApplication {
 	 * 
 	 * @see org.eclipse.equinox.p2.internal.repository.tools.MirrorApplication#getMirroring
 	 */
-	@Override
 	protected Mirroring getMirroring(IQueryable<IInstallableUnit> slice, IProgressMonitor monitor) {
 		// Obtain ArtifactKeys from IUs
 		IQueryResult<IInstallableUnit> ius = slice.query(QueryUtil.createIUAnyQuery(), new NullProgressMonitor());
